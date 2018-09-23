@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="yocto" fetch="git://git.yoctoproject.org/" pushurl="git://git.yoctoproject.org/" />
+	<remote  name="openembedded" fetch="git://git.openembedded.org/" pushurl="git://git.openembedded.org/" />
+	<remote  name="renesas" fetch="git://github.com/renesas-rcar/" pushurl="git://github.com/renesas-rcar/" />
+	<remote  name="meta-qt5" fetch="https://github.com/meta-qt5/" pushurl="https://github.com/meta-qt5/" />
+	<remote  name="linaro" fetch="git://git.linaro.org/openembedded/" pushurl="git://git.linaro.org/openembedded/" />
+	<remote  name="AGLExport" fetch="https://github.com/AGLExport/" pushurl="https://github.com/AGLExport/" />
+	
+	<default revision="master" />
+
+	<!-- Yocto Layers -->
+	<project path="poky" name="poky" remote="yocto" revision="rocko" />
+
+	<!-- Openembedded Layers -->
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="rocko" />
+	<project path="meta-linaro" name="meta-linaro" remote="linaro" revision="rocko" />
+
+	<!-- function Layers -->
+	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="rocko" />
+
+	<!-- distro Layers -->
+	<project path="meta-experimental-own" name="meta-experimental-own" remote="AGLExport" revision="master" />
+
+	<!-- bsp Layers -->
+	<project path="meta-renesas" name="meta-renesas" remote="renesas" revision="rocko" />
+</manifest>
