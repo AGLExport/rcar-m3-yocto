@@ -17,7 +17,7 @@
 	<project path="meta-linaro" name="meta-linaro" remote="linaro" revision="rocko" />
 
 	<!-- function Layers -->
-	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="rocko" />
+	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="4fb1e6084c7fec8e5e5667bca6e4a4ddfd8b500e" />
 
 	<!-- distro Layers -->
 	<project path="meta-experimental-own" name="meta-experimental-own" remote="AGLExport" revision="master" />
